@@ -127,10 +127,14 @@ h1 {
   }
   .flex {
     flex-direction: column;
+    padding: 0;
+    gap: 0;
   }
   .tablo {
-    padding: 3rem 0; 
     text-align: center;
+  }
+  .main {
+    min-height: 65vh;
   }
 }
 @media (max-width: 760px ) {
