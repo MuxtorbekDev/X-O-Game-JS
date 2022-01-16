@@ -26,19 +26,19 @@ const click_block = function (event) {
     winner.textContent = "O'yinchi 2";
     restart.attributes.removeNamedItem("hidden");
   } else if (
-    blocks[0].textContent !== "" &&
-    blocks[1].textContent !== "" &&
-    blocks[2].textContent !== "" &&
-    blocks[3].textContent !== "" &&
-    blocks[4].textContent !== "" &&
-    blocks[5].textContent !== "" &&
-    blocks[6].textContent !== "" &&
-    blocks[7].textContent !== "" &&
-    blocks[8].textContent !== ""
+    blocks[0].innerHTML !== "" &&
+    blocks[1].innerHTML !== "" &&
+    blocks[2].innerHTML !== "" &&
+    blocks[3].innerHTML !== "" &&
+    blocks[4].innerHTML !== "" &&
+    blocks[5].innerHTML !== "" &&
+    blocks[6].innerHTML !== "" &&
+    blocks[7].innerHTML !== "" &&
+    blocks[8].innerHTML !== ""
   ) {
     restartBox.classList.add("block");
 
-    winner.textContent = "O'yinchi 2";
+    winner.textContent = "Tenglik";
     restart.attributes.removeNamedItem("hidden");
   }
 };
