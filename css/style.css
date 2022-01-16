@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.main {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  background-color: white;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 13px
+}
+
+.board > div {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  background-color: #69eeff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  border-radius: 10px;
+  position: relative;
+}
+.board .block span.zero {
+  background-color: rgb(243, 26, 26);
+  color: #fff;
+  z-index: 1;
+  opacity: 0;
+}
+.board .block span.zero.indexOne {
+  opacity: 1;
+}
+.board .block span.zero.indexTwo {
+  opacity: 1;
+  background-color: rgb(238, 255, 0);
+
+}
+
+.board .block span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #333;
+  color: grey;
+}
+button.btn {
+  background-color: blue; 
+  border: none;
+  color: white;
+  padding: 25px 42px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 10px;
+  
+}
+.restart {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(12, 196, 27, 0.377);
+  text-align: center;
+  padding: 15rem 0;
+}
+.restart.block {
+  display: block;
+  z-index: 9999999999;
+}
+
+.fab.fa-opera {
+  color: rgb(12, 196, 27)
+}
+.fas.fa-times {
+  color: rgb(243, 26, 26);
+}
