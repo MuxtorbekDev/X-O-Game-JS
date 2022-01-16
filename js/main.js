@@ -68,7 +68,7 @@ const check_winner = function () {
     blocks[3].innerHTML === blocks[6].innerHTML &&
     blocks[6].innerHTML !== ""
   ) {
-    if (blocks[3].textContent === "X") {
+    if (blocks[3].textContent === '< class="fas fa-times">') {
       return 1;
     }
 
@@ -78,7 +78,7 @@ const check_winner = function () {
     blocks[4].innerHTML === blocks[7].innerHTML &&
     blocks[7].innerHTML !== ""
   ) {
-    if (blocks[4].innerHTML === "X") {
+    if (blocks[4].innerHTML === '< class="fas fa-times">') {
       return 1;
     }
 
@@ -88,7 +88,7 @@ const check_winner = function () {
     blocks[5].innerHTML === blocks[8].innerHTML &&
     blocks[8].innerHTML !== ""
   ) {
-    if (blocks[5].innerHTML === "X") {
+    if (blocks[5].innerHTML === '<i class="fas fa-times"></i>') {
       return 1;
     }
 
@@ -98,7 +98,7 @@ const check_winner = function () {
     blocks[1].innerHTML === blocks[2].innerHTML &&
     blocks[2].innerHTML !== ""
   ) {
-    if (blocks[1].innerHTML === "X") {
+    if (blocks[1].innerHTML === '<i class="fas fa-times"></i>') {
       return 1;
     }
 
@@ -108,7 +108,7 @@ const check_winner = function () {
     blocks[4].innerHTML === blocks[5].innerHTML &&
     blocks[5].innerHTML !== ""
   ) {
-    if (blocks[4].innerHTML === "X") {
+    if (blocks[4].innerHTML === '<i class="fas fa-times"></i>') {
       return 1;
     }
 
@@ -118,7 +118,7 @@ const check_winner = function () {
     blocks[7].innerHTML === blocks[8].innerHTML &&
     blocks[8].innerHTML !== ""
   ) {
-    if (blocks[7].innerHTML === "X") {
+    if (blocks[7].innerHTML === '< class="fas fa-times">') {
       return 1;
     }
 
@@ -128,7 +128,7 @@ const check_winner = function () {
     blocks[4].innerHTML === blocks[8].innerHTML &&
     blocks[8].innerHTML !== ""
   ) {
-    if (blocks[4].innerHTML === "X") {
+    if (blocks[4].innerHTML === '< class="fas fa-times">') {
       return 1;
     }
 
@@ -138,7 +138,7 @@ const check_winner = function () {
     blocks[4].innerHTML === blocks[6].innerHTML &&
     blocks[6].innerHTML !== ""
   ) {
-    if (blocks[4].innerHTML === "X") {
+    if (blocks[4].innerHTML === '< class="fas fa-times">') {
       return 1;
     }
 
